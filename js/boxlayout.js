@@ -132,6 +132,11 @@ var Boxlayout = (function() {
 		} );
 		
 		
+		$('#intro-panel').on('click', function(event) {
+			$('#intro-panel').removeClass('bl-show-work');
+			$('body').removeClass('introOpen');
+		});
+		
 		$(document).keyup(function(e) {
 			
 		  if (e.keyCode == 27) { 
@@ -162,8 +167,10 @@ var Boxlayout = (function() {
 
 					$el.removeClass( 'bl-expand-item' );
 					$('body').removeClass('sectionOpen');
-				} window.event.returnValue = false; 
-					window.event.cancelBubble = true;
+				} 
+				
+				window.event.returnValue = false; 
+				window.event.cancelBubble = true;
 			
 				//	$('.bl-icon-close').click();
 			} else if (e.keyCode == 39) {
