@@ -151,7 +151,7 @@ a:hover {
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-		background: #EC9CA8;
+		background: #F1A8AE;
 
 }
 
@@ -176,7 +176,7 @@ a:hover {
 .section-1 {
 	top: 0;
 	left: 0;
-	background: #EC9CA8;
+	background: #F1A8AE;
 }
 
 .section-2 {
@@ -522,7 +522,7 @@ div.bl-panel-items > div.bl-hide-current-work {
 }
 
 .bl-main > section:first-child.bl-expand {
-	background: #EC9CA8;
+	background: #F1A8AE;
 }
 .bl-main > section:nth-child(2).bl-expand {
 	background: #f4f0d7;
@@ -538,7 +538,7 @@ div.bl-panel-items > div.bl-hide-current-work {
 }
 
 .bl-main > .section-1.bl-expand {
-	background: #EC9CA8;	
+	background: #F1A8AE;	
 }
 .bl-main > .section-2.bl-expand {
 	background: #f4f0d7;
@@ -554,7 +554,7 @@ div.bl-panel-items > div.bl-hide-current-work {
 }
 
 .section-1.bl-expand .bl-content-inner{
-		background: #EC9CA8;
+		background: #F1A8AE;
 }
 
 .section-2.bl-expand .bl-content-inner{
