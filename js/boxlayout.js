@@ -162,7 +162,8 @@ var Boxlayout = (function() {
 
 					$el.removeClass( 'bl-expand-item' );
 					$('body').removeClass('sectionOpen');
-				}
+				} window.event.returnValue = false; 
+					window.event.cancelBubble = true;
 			
 				//	$('.bl-icon-close').click();
 			} else if (e.keyCode == 39) {
