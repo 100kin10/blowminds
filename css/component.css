@@ -119,7 +119,7 @@ a:hover {
 	
 }
 
-.bl-icon-close.intro-close-icon {
+.bl-icon-close.intro-close-icon, .bl-icon-close.outro-close-icon {
 	position: absolute;
 	top: 20px;
 	right: 20px;
