@@ -189,6 +189,18 @@ a:hover {
     align-items: center;
 }
 
+#outro-panel.outroOpen{
+	z-index: 1000;
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
+	-moz-transition: -moz-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
+	transition: transform 0.5s ease-in-out, opacity 0s linear 0.5s;
+	transform: translateY(0);
+	-ms-transform: translateY(0);
+}
+
 .bl-main {
 	position: absolute;
 	width: 100%;

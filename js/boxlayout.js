@@ -178,6 +178,8 @@ var Boxlayout = (function() {
 				
 			} else if (e.keyCode == 37) {
 				navigate('prev');
+			} else if (e.keyCode == 10) {
+				$('#outro-panel').addClass('outroOpen');
 			}
 		});
 
