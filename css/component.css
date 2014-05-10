@@ -195,6 +195,7 @@ input {
 
 #intro-inner{
 	
+	max-width:80%;
 	margin: 0 auto;
 	
 	font-size: 25px;
