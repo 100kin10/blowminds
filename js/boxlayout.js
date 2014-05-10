@@ -149,6 +149,11 @@ var Boxlayout = (function() {
 			$('body').removeClass('introOpen');
 		});
 		
+		$('#boo-panel').on('click', function(event) {
+			$('#boo-panel').removeClass('booOpen');
+
+		});
+		
 		
 		
 		$(document).keyup(function(e) {

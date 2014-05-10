@@ -48,6 +48,61 @@ a:hover {
 	color: #fff;
 }
 
+input { 
+	outline:none;
+	float:left;
+	border:none;
+}
+
+#mce-EMAIL{
+	width:78%;
+	height:35px;
+	color: #4693a5;
+	font-family: "museo-sans",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size:18px;
+	padding-left: 9px;
+}
+
+#mc-embedded-subscribe{
+	width: 20%;
+	height: 35px;
+	padding: 0;
+	color: black;
+	background-color: white;
+	border: none;
+	border-left:3px solid #F7C79A;
+	font-family: "museo-sans",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	color: #4693a5;
+	font-size:18px;
+}
+
+#mc_embed_signup{
+	display: block;
+	width: 100%;
+	height: 35px;
+}
+
+::-webkit-input-placeholder {
+   color: #4693a5;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #4693a5;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #4693a5;  
+}
+
+:-ms-input-placeholder {  
+   color: #4693a5;  
+}
+
+
 .container { height: 100%; }
 #intro-panel{
 	position: absolute;
@@ -417,6 +472,13 @@ overflow: hidden;
 overflow-y: auto;
 max-width: 862px;
 margin: 0 auto;
+}
+
+.bl-content-inner a{
+	text-transform:none;
+	font-size:100%;
+	padding:0;
+	font-weight:normal;
 }
 
 /* Custom content */
