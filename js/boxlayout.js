@@ -181,6 +181,7 @@ var Boxlayout = (function() {
 			} else if (e.keyCode == 32) {
 				
 				$('#outro-panel').addClass('outroOpen');
+				console.log('spacebar');
 			}
 		});
 
