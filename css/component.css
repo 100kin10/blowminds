@@ -148,7 +148,7 @@ a:hover {
 	line-height: 1.5;
 }
 
-#outro-panel{
+#outro-panel, #boo-panel{
 	position: absolute;
 	background:white;
 	width: 100%;
@@ -189,7 +189,7 @@ a:hover {
     align-items: center;
 }
 
-#outro-panel.outroOpen{
+#outro-panel.outroOpen, #boo-panel.booOpen{
 	z-index: 1000;
 	opacity: 1;
 	-webkit-transform: translateY(0);
@@ -203,7 +203,7 @@ a:hover {
 
 #outro-panel h3{
 	color:#2bbfef;
-	size:200px;
+	font-size:200px;
 }
 
 .bl-main {

@@ -131,11 +131,25 @@ var Boxlayout = (function() {
 
 		} );
 		
+		$('.outro-close-icon').on( 'click', function( event ) {
+			$('#outro-panel').removeClass('outroOpen');
+		} );
+		
+		$('.boo-close-icon').on( 'click', function( event ) {
+			$('#boo-panel').removeClass('booOpen');
+		} );
+		
+		$('.boo-open-link').on( 'click', function( event ) {
+			$('#boo-panel').addClass('booOpen');
+		} );
+		
 		
 		$('#intro-panel').on('click', function(event) {
 			$('#intro-panel').removeClass('bl-show-work');
 			$('body').removeClass('introOpen');
 		});
+		
+		
 		
 		$(document).keyup(function(e) {
 			
