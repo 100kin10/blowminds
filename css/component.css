@@ -284,12 +284,16 @@ input {
 
 
 
-#boo-inner{
-	width:100%;
-	height:100%;
-	font-size:85px;
-	word-wrap:break-word;
-	color:#e75f6d;
+#boo-inner {
+width: 100%;
+height: 100%;
+font-size: 5em;
+word-wrap: break-word;
+color: #e75f6d;
+line-height: 0.9;
+font-weight: 700;
+padding: 44px;
+text-align: left;
 }
 
 .bl-main {
