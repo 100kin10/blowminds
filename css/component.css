@@ -206,6 +206,15 @@ a:hover {
 	font-size:65px;
 }
 
+
+
+#boo-inner{
+	width:100%;
+	height:100%;
+	font-size:85;
+	text-wrap:normal;
+}
+
 .bl-main {
 	position: absolute;
 	width: 100%;
