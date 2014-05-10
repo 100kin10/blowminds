@@ -202,7 +202,7 @@ var Boxlayout = (function() {
 			} else if (e.keyCode == 37) {
 				navigate('prev');
 			} else if (e.keyCode == 32) {
-				if ($('body').hasClass('outroOpen')) {
+				if ($('#outro-panel').hasClass('outroOpen')) {
 						$('#outro-panel').removeClass('outroOpen');
 				} else {
 						$('#outro-panel').addClass('outroOpen');
