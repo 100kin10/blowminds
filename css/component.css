@@ -205,12 +205,12 @@ input {
 
 
 #intro-inner{
-	width: 60%;
+	
 	margin: 0 auto;
-	left: -30%;
+	
 	font-size: 25px;
-	padding:100px;
-	background: white;
+	
+	
 	color: #2bbfef;
 	/* Centering with flexbox */
     display: -webkit-box;
