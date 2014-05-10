@@ -129,12 +129,21 @@ a:hover {
 }
 
 .bl-icon-close.boo-close-icon{
-	color:#e75f6d;
+	color:#2bbfef;
 }
 
 .bl-icon-close.outro-close-icon{
+	color:#e75f6d;
+}
+
+.section-2 .bl-icon-close{
 	color:#2bbfef;
 }
+
+.section-3 .bl-icon-close{
+	color:#2bbfef;
+}
+
 
 #intro-inner{
 	width:50%;
