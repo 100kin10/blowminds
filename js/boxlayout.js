@@ -139,7 +139,7 @@ var Boxlayout = (function() {
 			$('#boo-panel').removeClass('booOpen');
 		} );
 		
-		$('.boo-open-link').on( 'click', function( event ) {
+		$('.boo-trigger').on( 'click', function( event ) {
 			$('#boo-panel').addClass('booOpen');
 		} );
 		
