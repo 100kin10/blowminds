@@ -240,6 +240,12 @@ input {
 	color: #2bbfef;
 }
 
+a.intro-close-icon{
+display:block;
+width:100%;
+text-align:center;	
+}
+
 #intro-inner h3 {
 	font-size: 40px;
 	font-family: "crete-round",sans-serif;
