@@ -236,6 +236,10 @@ input {
     align-items: center;
 }
 
+#intro-inner a{
+	color: #2bbfef;
+}
+
 #intro-inner h3 {
 	font-size: 40px;
 	font-family: "crete-round",sans-serif;
