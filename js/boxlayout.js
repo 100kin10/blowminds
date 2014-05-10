@@ -133,25 +133,29 @@ var Boxlayout = (function() {
 		
 		$('.outro-close-icon').on( 'click', function( event ) {
 			$('#outro-panel').removeClass('outroOpen');
+			return false;
 		} );
 		
 		$('.boo-close-icon').on( 'click', function( event ) {
 			$('#boo-panel').removeClass('booOpen');
+			return false;
 		} );
 		
 		$('.boo-trigger').on( 'click', function( event ) {
 			$('#boo-panel').addClass('booOpen');
+			return false;
 		} );
 		
 		
 		$('#intro-panel').on('click', function(event) {
 			$('#intro-panel').removeClass('bl-show-work');
 			$('body').removeClass('introOpen');
+			return false;
 		});
 		
 		$('#boo-panel').on('click', function(event) {
 			$('#boo-panel').removeClass('booOpen');
-
+			return false;
 		});
 		
 		
