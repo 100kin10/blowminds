@@ -128,6 +128,14 @@ a:hover {
 
 }
 
+.bl-icon-close.boo-close-icon{
+	color:#e75f6d;
+}
+
+.bl-icon-close.outro-close-icon{
+	color:#2bbfef;
+}
+
 #intro-inner{
 	width:50%;
 	margin:0 auto;
@@ -213,6 +221,7 @@ a:hover {
 	height:100%;
 	font-size:85px;
 	word-wrap:break-word;
+	color:#e75f6d;
 }
 
 .bl-main {
