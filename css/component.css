@@ -201,6 +201,11 @@ a:hover {
 	-ms-transform: translateY(0);
 }
 
+#outro-panel{
+	color:#2bbfef;
+	size:50px;
+}
+
 .bl-main {
 	position: absolute;
 	width: 100%;
