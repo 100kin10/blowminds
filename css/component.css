@@ -960,8 +960,7 @@ section.bl-expand .bl-icon-close {
 }
 
 /* mobile ----------- */
-@media only screen 
-and (max-device-width : 480px){
+@media only screen and (max-width: 479px) {
 	
 	#intro-inner {
 	width: 100%;
