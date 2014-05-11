@@ -22,11 +22,12 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 }
 
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-family: "crete-round",sans-serif;
+	font-style: normal;
+	font-weight: 400;
     color: #f2ede3;
     background: #333;
     font-size: 0.9em;
-    font-weight: 300;
 }
 
 a {
@@ -50,32 +51,34 @@ a:hover {
 
 input { 
 	outline:none;
-	float:left;
 	border:none;
 }
 
 #mce-EMAIL{
-	width:78%;
-	height:35px;
+	width:100%;
+	height:114px;
 	color: #4693a5;
 	font-family: "museo-sans",sans-serif;
 	font-style: normal;
 	font-weight: 300;
-	font-size:18px;
+	font-size:49px;
 	padding-left: 9px;
+	border-top:7px solid #F4F0D7;
+	text-align:center;
 }
 
 #mc-embedded-subscribe{
-	width: 20%;
-	height: 35px;
+	text-align:center;
+	width: 100%;
+	height: 65px;
 	padding: 0;
-	color: black;
-	background-color: white;
+	color: whit;
+	background-color: #2BBFEF;
 	border: none;
-	border-left:3px solid #F7C79A;
-	font-family: "museo-sans",sans-serif;
+	border-bottom:7px solid #4C94A5;
+	font-family: "crete-round",sans-serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
 	color: #4693a5;
 	font-size:18px;
 }
