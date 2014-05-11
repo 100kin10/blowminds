@@ -192,6 +192,8 @@ img.mobile-poster{
 	position:relative;
 }
 
+
+
 .pull-quote:before {
 content: open-quote;
 position: absolute;
@@ -201,6 +203,17 @@ left: -23px;
 .pull-quote:after {
 content: close-quote;
 }
+
+
+.section-1 .pull-quote{
+	color:#e75f6d;
+}
+
+.section-3 .pull-quote{
+	color:#2bbfef;
+}
+
+
 
 #intro-panel.bl-show-work {
 	z-index: 1000;
