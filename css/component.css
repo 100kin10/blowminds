@@ -52,6 +52,7 @@ a:hover {
 input { 
 	outline:none;
 	border:none;
+  -webkit-appearance: none;
 }
 
 #mce-EMAIL{
