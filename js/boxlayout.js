@@ -42,9 +42,53 @@ var Boxlayout = (function() {
 		supportTransitions = Modernizr.csstransitions;
 
 	function init() {
-		initEvents();		
+		initEvents();	
+		fixPlaceholders();	
 	}
 	
+	
+	// detect if it is mobile
+	if (navigator.userAgent.match(/(iPhone|iPod|Android|BlackBerry)/)) {
+		$isMobile = true;
+		$('html').addClass('mobile-device');
+	} else {
+		$isMobile = false;
+		$('html').addClass('not-mobile-device');
+	};
+
+	// cross browser alternative to console.log
+	function debug(text) {
+	    if ((typeof(Debug) !== 'undefined') && Debug.writeln) {
+	        Debug.writeln(text);
+	    }
+	    if (window.console && window.console.log) {
+	        window.console.log(text);
+	    }
+	    if (window.opera) {
+	        window.opera.postError(text);
+	    }
+	    if (window.debugService) {
+	        window.debugService.trace(text);
+	    }
+	}
+	
+	function fixPlaceholders() {
+		
+		$('#mce-EMAIL').val('Your Email Here');
+
+	    $('#mce-EMAIL').focus(function() {
+	        if (!$(this).data('originalValue')) {
+	            $(this).data('originalValue', $(this).val());
+	        }
+	        if ($(this).val() == $(this).data('originalValue')) {
+	            $(this).val('');
+	        }
+	    }).blur(function(){
+	        if ($(this).val() == '') {
+	            $(this).val($(this).data('originalValue'));
+	        }
+	    });
+	}
 	
 
 	function initEvents() {
