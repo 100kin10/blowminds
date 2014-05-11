@@ -67,6 +67,23 @@ input {
 	text-align:center;
 }
 
+.landscape-layout .desktop-poster{
+	display:block;
+}
+
+.portrait-layout .desktop-poster{
+	display:none;
+}
+
+.landscape-layout .mobile-poster{
+	display:none;
+}
+
+.portrait-layout .mobile-poster{
+	display:block;
+}
+
+
 #mc-embedded-subscribe{
 	text-align:center;
 	width: 100%;
