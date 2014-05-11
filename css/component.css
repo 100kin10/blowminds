@@ -53,6 +53,7 @@ input {
 	outline:none;
 	border:none;
   -webkit-appearance: none;
+	border-radius: 0;
 }
 
 #mce-EMAIL{
