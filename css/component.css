@@ -312,6 +312,12 @@ text-align:center;
 	line-height: 1.5;
 }
 
+
+#outro-panel{
+	background-color:#F4F0D7;
+	background-image: url('../images/pattern-blue.png');
+}
+
 #outro-panel, #boo-panel{
 	position: absolute;
 	background:white;
