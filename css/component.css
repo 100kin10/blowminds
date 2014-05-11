@@ -176,7 +176,7 @@ img.mobile-poster{
 .pull-quote:before {
 content: open-quote;
 position: absolute;
-left: -16px;
+left: -23px;
 }
 
 .pull-quote:after {
