@@ -72,21 +72,20 @@ input {
 	width: 100%;
 	height: 65px;
 	padding: 0;
-	color: whit;
+	color: white;
 	background-color: #2BBFEF;
 	border: none;
 	border-bottom:7px solid #4C94A5;
 	font-family: "crete-round",sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	color: #4693a5;
-	font-size:18px;
+	font-size:36px;
 }
 
 #mc_embed_signup{
 	display: block;
 	width: 100%;
-	height: 35px;
+
 }
 
 ::-webkit-input-placeholder {
