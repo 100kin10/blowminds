@@ -170,6 +170,17 @@ img.mobile-poster{
 	font-family: "crete-round",sans-serif;
 	font-style: normal;
 	font-weight: 400;
+	position:relative;
+}
+
+.pull-quote:before {
+content: open-quote;
+position: absolute;
+left: -16px;
+}
+
+.pull-quote:after {
+content: close-quote;
 }
 
 #intro-panel.bl-show-work {
