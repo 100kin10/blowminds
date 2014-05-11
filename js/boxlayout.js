@@ -43,8 +43,11 @@ var Boxlayout = (function() {
 
 	function init() {
 		initEvents();	
+		layoutType();
 		fixPlaceholders();	
 	}
+	
+	
 	
 	
 	// detect if it is mobile
@@ -259,7 +262,22 @@ var Boxlayout = (function() {
 	
 	$(window).resize(function(event) {
 		heightControl();
+		layoutType();
+		
+		
+		
 	});
+	
+	function layoutType() {
+		if ($( window ).width() > $( window ).height() ) {
+			$('body').addClass('landscape-layout');
+			$('body').removeClass('portrait-layout');
+		} else {
+			$('body').removeClass('landscape-layout');
+			$('body').addClass('portrait-layout');
+		}
+	}
+	
 	
 	function heightControl() {
 		var quarterHeight = $('.bl-box').height() *.75;
