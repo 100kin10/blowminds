@@ -152,6 +152,24 @@ img.mobile-poster{
 	display:none;
 }
 
+
+.bold-text{
+	font-weight:700;
+}
+
+.pull-quote{
+	border-top:4px solid white;
+	border-bottom:4px solid white;
+	padding-top:45px;
+	padding-bottom:45px;
+	width:100%;
+	font-size:47px;
+	color:#EE9748;
+	font-family: "crete-round",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
 #intro-panel.bl-show-work {
 	z-index: 1000;
 	opacity: 1;
