@@ -1013,5 +1013,16 @@ section.bl-expand .bl-icon-close {
 
 	}
 	
+	.pull-quote {
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-top: 15px;
+	margin-bottom: 35px;
+	font-size: 20px;
+
+	}
+	
 }
 
