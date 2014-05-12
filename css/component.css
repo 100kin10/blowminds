@@ -1024,5 +1024,9 @@ section.bl-expand .bl-icon-close {
 
 	}
 	
+	.pull-quote:before {
+	left: -10px;
+	}
+	
 }
 
