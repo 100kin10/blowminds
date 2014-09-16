@@ -120,7 +120,6 @@ function fbs_click($shareurl,$sharetitle) {
 	return false;
 };
 
-
 $(document).ready(function () {
 
 	// Make tweets out of our markup rather than encoding the URLs the crappy way
@@ -137,7 +136,7 @@ $(document).ready(function () {
 			if (!hashtags) {
 				hashtags = '';
 			}
-		var link = 'http://100kin10.github.io/beta/';
+		var link = 'http://blowmindsteachstem.com/';
 		var dataurl = $(this).data('tweeturl');
 			if (dataurl) {
 				link = dataurl;
