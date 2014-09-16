@@ -126,23 +126,43 @@ $(document).ready(function () {
 
 	$('.tweet').each(function() {
 		var tweet = $(this).text();
-		var datatweet = $(this).data('tweet');
-			if (datatweet) {
-				tweet = datatweet;
-			}
-		var trimmedtweet = $.trim(tweet);
-		var encodedtweet = encodeURIComponent(trimmedtweet);
+		var data_tweet = $(this).data('tweet');
+		if (data_tweet) { tweet = data_tweet; }
+		var trimmed_tweet = $.trim(tweet);
+		var encoded_tweet = encodeURIComponent(trimmed_tweet);
+
 		var hashtags = $(this).data('hashtags');
-			if (!hashtags) {
-				hashtags = '';
-			}
-		var link = 'http://blowmindsteachstem.com/';
-		var dataurl = $(this).data('tweeturl');
-			if (dataurl) {
-				link = dataurl;
-			}
-		var encodedlink = encodeURIComponent(link);
-		$(this).siblings('.tweet-this').attr('href', 'http://twitter.com/intent/tweet?text=' + encodedtweet + '&hashtags=' + hashtags + '&url=' + encodedlink);
+		if (!hashtags) { hashtags = ''; }
+
+		var link = 'http://blowmindsteachstem.com/'; //Default link
+		var data_url = $(this).data('tweeturl');
+		if (data_url) { link = data_url; }
+		var encoded_link = encodeURIComponent(link);
+
+		$(this).siblings('.tweet-this').attr('href', 'http://twitter.com/intent/tweet?text=' + encoded_tweet + '&hashtags=' + hashtags + '&url=' + encoded_link);
+
+	});
+
+	$('.tumblr-share').each(function() {
+		var title = 'Blow Minds. Teach Stem'; //Default title
+		var data_title = $(this).data('title');
+		if (data_title) { title = data_title; }
+		var trimmed_title = $.trim(title);
+		var encoded_title = encodeURIComponent(trimmed_title);
+
+		var description = $(this).text();
+		var data_description = $(this).data('description');
+		if (data_description) { description = data_description; }
+		var trimmed_description = $.trim(description);
+		var encoded_description = encodeURIComponent(trimmed_description);
+
+		var link = 'http://blowmindsteachstem.com/'; //Default link
+		var data_url = $(this).data('url');
+		if (data_url) { link = data_url; }
+		var encoded_link = encodeURIComponent(link);
+
+		$(this).siblings('.tumblr-this').attr('href', 'http://www.tumblr.com/share/link?url=' + encoded_link + '&name=' + encoded_title + '&description=' + encoded_description);
+
 	});
 
 	// Quiz stuff
