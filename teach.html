@@ -177,7 +177,16 @@
 
       <div id="form-container" class="row">
         <div class="column">
-					<form action="https://docs.google.com/a/codespike.co/forms/d/1wwDGNCZtpoSODgqI6TssW-TmrAioijfaXoOOgyYSMWk/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+					<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" class="hide" id="hidden_iframe" onload="
+	if(submitted) {
+		$('.submit').addClass('hide');
+		$('.submit.confirmation').removeClass('hide');
+	}">
+</iframe>
+<form action="YOUR-EMBEDDED-GOOGLE-SPREADSHEET-LINK" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+
+<form action="https://docs.google.com/a/codespike.co/forms/d/1wwDGNCZtpoSODgqI6TssW-TmrAioijfaXoOOgyYSMWk/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;"><ol role="list" class="ss-question-list" style="padding-left: 0">
 <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
 <label class="ss-q-item-label" for="entry_1862387142"><div class="ss-q-title">What is your life status?
@@ -246,8 +255,6 @@
 <input type="hidden" name="draftResponse" value="[,,&quot;-1550877961576975888&quot;]
 ">
 <input type="hidden" name="pageHistory" value="0">
-
-
 <input type="hidden" name="fbzx" value="-1550877961576975888">
 
 <div class="submit">
@@ -255,25 +262,10 @@
 <button type="submit" name="submit" id="ss-submit" class="large">Submit Your Answers</button>
 </div>
 
-<div class="submit hide" style="
-">
-<h2 style="
-    font-size: 2.5em;
-    font-weight: 500;
-">Woohoo! One step closer to becoming the world’s most mind-blowingest mind blower!</h2>
-
-<p style="
-    font-size: 1.65em;
-    font-weight: 400;
-">Keep an eye out for a confirmation email from our STEM Teacher Recruitment Drones. Then keep another eye out for messages from teacher training programs that are best suited to help you get started down this path. Lastly, grow a third eye and keep it out for birds.</p>
-
-<p style="
-    font-size: 1.65em;
-    font-weight: 400;
-">In the mean time, you can <a style="
-    color: yellow;
-">join this Facebook group</a>, <a>follow us on Twitter</a>, or <a>play around in our Tumblr</a>. Thanks for improving the future!</p>
-
+<div class="submit hide confirmation">
+<h2>Woohoo! One step closer to becoming the world’s most mind-blowingest mind blower!</h2>
+<p>Keep an eye out for a confirmation email from our STEM Teacher Recruitment Drones. Then keep another eye out for messages from teacher training programs that are best suited to help you get started down this path. Lastly, grow a third eye and keep it out for birds.</p>
+<p>In the mean time, you can <a href="https://www.facebook.com/groups/846756655337613/" target="_blank">join this Facebook group</a>, <a href="https://twitter.com/teach_stem" target="_blank">follow us on Twitter</a>, or <a href="http://blowmindsteachstem.tumblr.com/">play around in our Tumblr</a>. Thanks for improving the future!</p>
 </div>
 
 </ol>

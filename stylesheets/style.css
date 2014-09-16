@@ -6203,6 +6203,17 @@ label:hover .checkbox-inner, .checked .checkbox-inner, .checkbox-inner.checked {
   margin-bottom: 0.333em;
   line-height: 1.25;
 }
+#form-container .submit a {
+  color: #FBE64F;
+}
+#form-container .submit.confirmation h2 {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+#form-container .submit.confirmation p {
+  font-size: 1.65em;
+  font-weight: 400;
+}
 
 .ss-form-question {
   background-color: #2BBFEF;
