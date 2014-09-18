@@ -195,7 +195,7 @@ $(document).ready(function () {
 			e.preventDefault();
 			e.stopPropagation();
 			
-			
+			console.log('clicked');
 			
 			var quip = $(this).data('quip');
 			if (!quip) {
