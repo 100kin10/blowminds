@@ -185,7 +185,7 @@ $(document).ready(function () {
 		$('.quizinart-selections label').on( 'click', function(e) {
 			e.preventDefault();
 			e.stopPropagation();
-			
+			$('this').click();
 			var quip = $(this).data('quip');
 			if (!quip) {
 				quip = ' ';
