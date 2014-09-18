@@ -182,6 +182,8 @@ $(document).ready(function () {
 
 		});
 		
+		console.log(isMobile);
+		
 		if($isMobile){
 			$('.quizinart-selections label').on('touchstart', function (event) {
 				$('this').trigger('click');
