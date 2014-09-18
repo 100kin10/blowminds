@@ -183,12 +183,10 @@ $(document).ready(function () {
 		});
 		
 		if($isMobile){
-			$('.quizinart-selections label').hover(function() {
-				e.preventDefault();
-				e.stopPropagation();
+			$('.quizinart-selections label').on('touchstart', function (event) {
 				$('this').trigger('click');
-				console.log('hovered');
-			});
+				console.log('touchstart');
+		  });
 		}
 
 		$('.quizinart-selections label').on( 'click', function(e) {
