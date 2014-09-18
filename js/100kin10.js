@@ -182,7 +182,7 @@ $(document).ready(function () {
 
 		});
 		
-		console.log(isMobile);
+		console.log($isMobile);
 		
 		if($isMobile){
 			$('.quizinart-selections label').on('touchstart', function (event) {
