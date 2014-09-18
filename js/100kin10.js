@@ -190,7 +190,6 @@ $(document).ready(function () {
 			e.preventDefault();
 			e.stopPropagation();
 			
-			console.log('clicked');
 			
 			var quip = $(this).data('quip');
 			if (!quip) {
@@ -391,12 +390,9 @@ $(document).ready(function () {
 		$('html').addClass('not-mobile-device');
 	};
 	
-	console.log($isMobile);
-	
 	if($isMobile){
 		$('.quizinart-selections label').on('touchstart', function (event) {
 			$('this').trigger('click');
-			console.log('touchstart');
 	  });
 	}
 		
