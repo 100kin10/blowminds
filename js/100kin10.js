@@ -183,11 +183,11 @@ $(document).ready(function () {
 		});
 		
 		if($isMobile){
-			$('.quizinart-selections label').on( 'hover', function(e) {
+			$('.quizinart-selections label').hover(function() {
 				e.preventDefault();
 				e.stopPropagation();
 				$('this').trigger('click');
-
+				console.log('hovered');
 			});
 		}
 
