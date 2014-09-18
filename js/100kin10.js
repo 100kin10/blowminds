@@ -182,14 +182,9 @@ $(document).ready(function () {
 
 		});
 		
-		console.log($isMobile);
 		
-		if($isMobile){
-			$('.quizinart-selections label').on('touchstart', function (event) {
-				$('this').trigger('click');
-				console.log('touchstart');
-		  });
-		}
+		
+
 
 		$('.quizinart-selections label').on( 'click', function(e) {
 			e.preventDefault();
@@ -395,6 +390,15 @@ $(document).ready(function () {
 		$isMobile = false;
 		$('html').addClass('not-mobile-device');
 	};
+	
+	console.log($isMobile);
+	
+	if($isMobile){
+		$('.quizinart-selections label').on('touchstart', function (event) {
+			$('this').trigger('click');
+			console.log('touchstart');
+	  });
+	}
 		
 	function isiPad(){
 	    if (navigator.userAgent.match(/iPad/i) != null) {
