@@ -181,11 +181,22 @@ $(document).ready(function () {
 			$nextQuestion.addClass('currentQuestion');
 
 		});
+		
+		if($isMobile){
+			$('.quizinart-selections label').on( 'hover', function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+				$('this').trigger('click');
+
+			});
+		}
 
 		$('.quizinart-selections label').on( 'click', function(e) {
 			e.preventDefault();
 			e.stopPropagation();
-			$('this').trigger( "click" );
+			
+			
+			
 			var quip = $(this).data('quip');
 			if (!quip) {
 				quip = ' ';
