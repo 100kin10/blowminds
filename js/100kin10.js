@@ -165,12 +165,13 @@ $(document).ready(function () {
 
 	});
 
+
 	// Quiz stuff
 	// ----------------------------------------
 
 	function quizinart() {
 
-		$('#quizinart-start-button').on( 'click', function(e) {
+		$('#quizinart-start-button').on( 'click touchend', function(e) {
 
 			$container = $('#quizinart-intro')
 			$nextQuestion = $container.next( '.question-container' );
@@ -181,21 +182,16 @@ $(document).ready(function () {
 			$nextQuestion.addClass('currentQuestion');
 
 		});
-		
-		
-		
 
-
-		$('.quizinart-selections label').on( 'click', function(e) {
+		var labelclick = function(e) {
 			e.preventDefault();
 			e.stopPropagation();
 			
-			
-			var quip = $(this).data('quip');
+			var quip = $this.data('quip');
 			if (!quip) {
 				quip = ' ';
 			}
-			$container = $(this).closest('.question-container');
+			$container = $this.closest('.question-container');
 			$nextQuestion = $container.next('.question-container');
 
 			$container.removeClass('currentQuestion');
@@ -214,8 +210,18 @@ $(document).ready(function () {
 					$('#quizinart-inner').height($nextQuestionHeight);
 		    },4000);
 			}
+		}
 
+		$('.quizinart-selections label:not(.yes,.no)').on( 'click touchend', function(e) {
+			$this = $(this);
+			labelclick(e);
 		});
+
+		$('.quizinart-selections label:not(:not(.yes,.no))').on( 'click', function(e) {
+			$this = $(this);
+			labelclick(e);
+		});
+
 
 		var list = $("#question-2 .button-container");
 		//make default state _not_ a special case by adding a class to it
@@ -390,11 +396,11 @@ $(document).ready(function () {
 		$('html').addClass('not-mobile-device');
 	};
 	
-	if($isMobile){
-		$('.quizinart-selections label').on('touchstart', function (event) {
-			$('this').trigger('click');
-	  });
-	}
+	// if($isMobile){
+	// 	$('.quizinart-selections label').on('touchstart', function (event) {
+	// 		$('this').trigger('click');
+	//   });
+	// }
 		
 	function isiPad(){
 	    if (navigator.userAgent.match(/iPad/i) != null) {
