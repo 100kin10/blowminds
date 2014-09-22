@@ -429,7 +429,7 @@ $(document).ready(function () {
 		disableImageClick();
 		fullScreenSlide();
 		mediaQueryCalculator();	
-		
+		$("#new-embed-container").fitVids();
 	
 		if(!$isMobile){
 			$('a.changing-number').unbind('hover');

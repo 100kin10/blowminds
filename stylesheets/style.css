@@ -5075,15 +5075,34 @@ label:hover .checkbox-inner, .checked .checkbox-inner, .checkbox-inner.checked {
 }
 
 #video-container {
-  background: #F4F0D7;
-  padding-top: 48px;
-  padding-bottom: 14%;
+  background: #575C62;
+  padding-top: 88px;
+  padding-bottom: 20%;
 }
+
+img#video-header{
+	margin-bottom:32px;
+}
+
+
+@media only screen and (min-width: 401px) {
+    #video-container {
+      padding-bottom: 100px;
+    }
+}
+
 @media only screen and (min-width: 641px) {
   #video-container {
-    padding-bottom: 0;
+    padding-bottom: 130px;
   }
 }
+
+@media only screen and (min-width: 1025px) {
+  #video-container {
+	  padding-bottom: 250px;
+  }
+}
+
 
 #video-container-inner {
   position: relative;
