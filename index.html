@@ -154,16 +154,10 @@
   		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
   		function onYouTubePlayerAPIReady(playerId) {
-				console.log('API ' + playerId);
 				ytplayer = document.getElementById("myytplayer");
-  		}
-			
-			function onYouTubePlayerReady(playerId) {
-				console.log('not API ' + playerId);
-			      ytplayer = document.getElementById("myytplayer");
-			    }
-		
-			// closediv 
+			  ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
+			}
+
 			function onytplayerStateChange(newState) {
 			   console.log(newState);
 			}
