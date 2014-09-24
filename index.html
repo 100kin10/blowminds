@@ -53,7 +53,7 @@
     <script type="text/javascript" src="js/modernizr.custom.57081.js"></script>
     <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
     <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
-
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>    
     <script type="text/javascript" src="//use.typekit.net/jxy1nvv.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -141,7 +141,7 @@
       <div id="video-container-inner" class="row">
         <div id="new-embed-container" class="column large-10 large-centered">
 					<img id="video-header" src="img/100k_topcopy-15.png" alt="">
-        	<iframe width="996" height="560" src="//www.youtube.com/embed/WxVO_5RGM4A?rel=0&vq=hd1080&enablejsapi=1&playerapiid=myytplayer" frameborder="0" allowfullscreen></iframe>
+        	<iframe width="996" height="560" src="//www.youtube.com/embed/WxVO_5RGM4A?rel=0&vq=hd1080&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </section>
@@ -154,7 +154,7 @@
   		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
   		function onYouTubePlayerAPIReady(playerId) {
-				ytplayer = document.getElementById("myytplayer");
+				ytplayer = document.getElementsByTagName('iframe')[0];
 			  ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
 			}
 
