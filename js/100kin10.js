@@ -280,20 +280,7 @@ $(document).ready(function () {
 	
 	
 	
-	var params = { allowScriptAccess: "always"  };
-	var atts = { id: "fitvid499493" };
-	
-	// listen
-	function onYouTubePlayerReady(playerId) {
-	  var ytplayer = getElementById("fitvid499493");
-	  ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
-	}
-	// closediv 
-	function onytplayerStateChange(newState) {
-	   console.log(newState);
-	}
-	
-	
+
 
 	// Find the select boxes and change them to fancy fake select boxes and radio buttons
 	// ----------------------------------------
