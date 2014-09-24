@@ -281,11 +281,11 @@ $(document).ready(function () {
 	
 	
 	var params = { allowScriptAccess: "always"  };
-	var atts = { id: "player_uid_731314409_1" };
+	var atts = { id: "ytplayer" };
 	
 	// listen
 	function onYouTubePlayerReady(playerId) {
-	  var ytplayer = getElementById("player_uid_731314409_1");
+	  var ytplayer = getElementById("ytplayer");
 	  ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
 	}
 	// closediv 
