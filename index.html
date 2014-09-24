@@ -153,9 +153,20 @@
   		var firstScriptTag = document.getElementsByTagName('script')[0];
   		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-  		function onYouTubePlayerAPIReady() {
-				console.log('ready');
+  		function onYouTubePlayerAPIReady(playerId) {
+				console.log(playerId);
+				var ytplayer = getElementById(playerId);
+				 ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
   		}
+		
+			// closediv 
+			function onytplayerStateChange(newState) {
+			   console.log(newState);
+			}
+	
+	
+	
+	
 		</script>
 
     <section id="quizinart-container">
