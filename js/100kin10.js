@@ -278,13 +278,7 @@ $(document).ready(function () {
 
 	videoclick();
 	
-	console.log('working');
-	
-	$('.fluid-width-video-wrapper iframe').on('click', function() {
-		console.log('clicked');
-	});
-	
-	
+
 
 
 	// Find the select boxes and change them to fancy fake select boxes and radio buttons
