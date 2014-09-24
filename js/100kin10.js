@@ -62,6 +62,14 @@ function onHoverOrClickOut() {
 	$('img#animated').remove();
 }
 
+//look here dude
+
+$('.analytics-link').click(function() {
+	var $linkCategory = $(this).data('category');
+	var $linkAction = $(this).data('action');
+	var $linkLabel = $(this).data('label');
+	ga('send', 'event', $linkCategory, $linkAction, $linkLabel);
+});
 
 
 
