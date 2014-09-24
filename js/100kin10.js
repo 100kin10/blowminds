@@ -278,7 +278,9 @@ $(document).ready(function () {
 
 	videoclick();
 	
-	$('.fluid-width-video-wrapper').on('click', function() {
+	console.log('working');
+	
+	$('.fluid-width-video-wrapper iframe').on('click', function() {
 		console.log('clicked');
 	});
 	
