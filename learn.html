@@ -51,7 +51,8 @@
     <script type="text/javascript" src="js/modernizr.custom.57081.js"></script>
     <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
     <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
-    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>    
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fitvids.js"></script>        
     <script type="text/javascript" src="//use.typekit.net/jxy1nvv.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -107,10 +108,10 @@
         <!-- Off Canvas Menu -->
         <aside class="left-off-canvas-menu">
             <ul>
-              <li><a id="left-home" href="/" target="_parent">Blow Minds</a></li>
-              <li><a id="left-teach" href="teach.html" target="_parent">Curious About Teaching?</a></li>
-              <li><a id="left-learn" href="learn.html" target="_parent">Our Back Story</a></li>
-              <li><a id="left-tumblr" href="http://blowmindsteachstem.tumblr.com/" target="_parent">Mind-blowing Blog</a></li>
+              <li><a id="left-home" href="/" target="_parent" class=" analytics-link" data-category="In World" data-action="Home Page" data-label="Nav Text">Blow Minds</a></li>
+              <li><a id="left-teach" href="teach.html" target="_parent" class=" analytics-link" data-category="In World" data-action="Teach Page" data-label="Nav Text">Curious About Teaching?</a></li>
+              <li><a id="left-learn" href="learn.html" target="_parent" class=" analytics-link" data-category="In World" data-action="Learn Page" data-label="Nav Text">Our Back Story</a></li>
+              <li><a id="left-tumblr" href="http://blowmindsteachstem.tumblr.com/" target="_parent" class=" analytics-link" data-category="Off World" data-action="Tumblr Blog" >Mind-blowing Blog</a></li>
             </ul>
         </aside>
 
@@ -119,21 +120,21 @@
 
             <a class="left-off-canvas-toggle menu-icon show-for-medium-down" href="#"></a>
 
-            <a id="nav-home" href="/" target="_parent" class="column medium-2 left-align hide-for-medium-down">Blow Minds</a>
+            <a id="nav-home" href="/" target="_parent" class="column medium-2 left-align hide-for-medium-down analytics-link" data-category="In World" data-action="Home Page" data-label="Nav Text">Blow Minds</a>
 
             <div class="column medium-8 centered-text hide-for-medium-down">
-              <a id="nav-teach" href="teach.html" target="_parent">Curious About Teaching?</a>
-              <a id="nav-learn" href="learn.html" target="_parent">Our Back Story</a>
-              <a id="nav-tumblr" href="http://blowmindsteachstem.tumblr.com/" target="_parent">Mind-blowing Blog</a>
+              <a id="nav-teach" href="teach.html" target="_parent" class=" analytics-link" data-category="In World" data-action="Teach Page" data-label="Nav Text">Curious About Teaching?</a>
+              <a id="nav-learn" href="learn.html" target="_parent" class=" analytics-link" data-category="In World" data-action="Learn Page" data-label="Nav Text">Our Back Story</a>
+              <a id="nav-tumblr" href="http://blowmindsteachstem.tumblr.com/" target="_parent" class=" analytics-link" data-category="Off World" data-action="Tumblr Blog" data-label="Nav Text">Mind-blowing Blog</a>
             </div>
 
             <div id="share-container" class="column medium-2 right-align  hide-for-medium-down">
-              <a href="https://www.facebook.com/groups/846756655337613/" alt="Facebook Share" id="header-facebook-follow" class="header-follow facebook analytics-link" target="_blank" data-category="follow" data-action="facebook" data-label="header facebook follow"><img src="img/share-facebook.svg" alt="Facebook Share Image"></a>
-              <a href="https://twitter.com/teach_stem" alt="Twitter Share"  id="header-twitter-follow" class="header-follow twitter" target="_blank" data-category="follow" data-action="twitter" data-label="header twitter follow"><img src="img/share-twitter.svg" alt="Twitter Share Image"></a>
-              <a href="http://blowmindsteachstem.tumblr.com" alt="Tumblr Share" id="header-tumblr-follow" class="header-follow tumblr" target="_blank" data-category="follow" data-action="tumblr" data-label="header tumblr follow"><img src="img/share-tumblr.svg" alt="Tumblr Share Image"></a>
+              <a href="https://www.facebook.com/groups/846756655337613/" alt="Facebook Share" id="header-facebook-follow" class="header-follow facebook analytics-link" target="_blank" data-category="Off World" data-action="Facebook Group" data-label="Nav Button"><img src="img/share-facebook.svg" alt="Facebook Share Image"></a>
+              <a href="https://twitter.com/teach_stem" alt="Twitter Share"  id="header-twitter-follow" class="header-follow twitter  analytics-link" target="_blank" data-category="Off World" data-action="Twitter Profile" data-label="Nav Button"><img src="img/share-twitter.svg" alt="Twitter Share Image"></a>
+              <a href="http://blowmindsteachstem.tumblr.com" alt="Tumblr Share" id="header-tumblr-follow" class="header-follow tumblr analytics-link" target="_blank" data-category="Off World" data-action="Tumblr Blog Group" data-label="Nav Button"><img src="img/share-tumblr.svg" alt="Tumblr Share Image"></a>
             </div>
           </div>
-        </header>    
+        </header>
     <section id="person-top-item">
       <div id="person-top-inner" class="row">
         <div id="person-of-the-year" class="column large-6 xlarge-7">
@@ -143,7 +144,7 @@
           <h2 id="top-person-headline">This Story Is Simple: The Future Depends On Great STEM Teachers.  We’re Recruiting 100,000 More.</h2>
           <p id="obama-quote" class="tweet" data-tweet="“If you want to make a difference in the life of our nation… become a teacher.” - @BarackObama" data-tweeturl="http://bit.ly/whyblowminds" data-hashtags="BlowMinds">“...every young person... who’s contemplating their career choice: <span>If you want to make a difference</span> in the life of our nation; if you want to make a difference in the life of a child — <span>become a teacher.</span> Your country needs you.”</p>
           <span id="obama-name">— President Obama</span>
-          <a id="obama-share" class="tweet-this">
+          <a id="obama-share" class="tweet-this analytics-link" target="_blank" data-category="Share" data-action="Twitter Share" data-label="Big Obama Quote Text">
             Educate your Twitter followers.
             <img src="img/share-twitter-blue.svg" alt="Twitter Share Image">
           </a>
@@ -160,19 +161,19 @@
             <span class="tweet" data-hashtags="TeachSTEM" data-tweeturl="http://bit.ly/blowminds">
               “We’re number 27! We’re number 27! USA! USA!” Let’s get better at math. You can help.
             </span>
-            <a class="tweet-this learn-section-share">Tweet This Right Now</a>
+            <a class="tweet-this learn-section-share analytics-link" target="_blank" data-category="Share" data-action="Twitter Share" data-label="Little Quote Text">Tweet This Right Now</a>
           </p>
           <p class="learn-section-quote">
             <span class="tweet" data-tweeturl="http://bit.ly/whyblowminds">
               “While the U.S. spends more per student than most countries, this does not translate into better performance.” - OECD
             </span>
-            <a class="tweet-this learn-section-share">Tweet This Right Now</a>
+            <a class="tweet-this learn-section-share analytics-link" target="_blank" data-category="Share" data-action="Twitter Share" data-label="Little Quote Text">Tweet This Right Now</a>
           </p>
           <p class="learn-section-quote">
             <span class="tweet" data-hashtags="BlowMinds" data-tweeturl="http://bit.ly/blowminds">
               In 2011 @BarackObama urged 100k young people to #TeachSTEM. Now that mission has a new home.
             </span>
-            <a class="tweet-this learn-section-share">Tweet This Right Now</a>
+            <a class="tweet-this learn-section-share analytics-link" data-category="Share" data-action="Twitter Share" data-label="Little Quote Text" target="_blank" >Tweet This Right Now</a>
           </p>
         </div>
         <div class="column large-6 xlarge-5 xlarge-offset-1 learn-section-paragraphs">
@@ -192,13 +193,13 @@
               Your teacher says you should share.
               <span class="img-share">
 
-                <a onclick="return fbs_click('http://gph.to/1qHetjL')" href="#" alt="Facebook Share"><img src="img/share-facebook-blue.svg" alt="Facebook Share Image"></a>
+                <a onclick="return fbs_click('http://gph.to/1qHetjL')" href="#" alt="Facebook Share" class="analytics-link" target="_blank" data-category="Share" data-action="Facebook Share" data-label="Big GIF Button"><img src="img/share-facebook-blue.svg" alt="Facebook Share Image"></a>
 
                 <span class="tweet" data-tweeturl="http://gph.to/1qHetjL" data-tweet="&lt;WTF&gt; Only 10 percent of U.S. high schools teach coding. &lt;/WTF&gt;" data-hashtags="BlowMinds,TeachSTEM"></span>
-                <a class="tweet-this" alt="Twitter Share"><img src="img/share-twitter-blue.svg" alt="Twitter Share Image"></a>
+                <a class="tweet-this analytics-link" target="_blank" data-category="Share" data-action="Twitter Share" data-label="Big GIF Button" alt="Twitter Share"><img src="img/share-twitter-blue.svg" alt="Twitter Share Image"></a>
 
                 <span class="tumblr-share" data-title="Blow Minds. Teach Stem." data-description="&amp;lt;WTF&amp;gt; Only 10 percent of U.S. high schools teach coding. &amp;lt;/WTF&amp;gt;" data-url="http://gph.to/1qHetjL"></span>
-                <a class="tumblr-this" alt="Tumblr Share"><img src="img/share-tumblr-blue.svg" alt="Tumblr Share Image"></a>
+                <a class="tumblr-this analytics-link" target="_blank" data-category="Share" data-action="Tumblr Share" data-label="Big GIF Button" alt="Tumblr Share"><img src="img/share-tumblr-blue.svg" alt="Tumblr Share Image"></a>
 
               </span>
             </figcaption>
@@ -215,13 +216,13 @@
           </p>
           <div class="share">
 
-            <a onclick="return fbs_click('http://bit.ly/blowminds')" href="#" alt="Facebook Share"><img src="img/share-facebook-blue.svg" alt="Facebook Share Image"></a>
+            <a onclick="return fbs_click('http://bit.ly/blowminds')" href="#" alt="Facebook Share" class=" analytics-link" data-category="Share" data-action="Facebook Share" data-label="Teacher Of The Year Button"><img src="img/share-facebook-blue.svg" alt="Facebook Share Image"></a>
 
             <span class="tweet" data-tweeturl="http://bit.ly/blowminds" data-tweet="The most mind-blowing profession now has the most mind-blowing awareness campaign." data-hashtags="BlowMinds,TeachSTEM"></span>
-            <a class="tweet-this" alt="Twitter Share"><img src="img/share-twitter-blue.svg" alt="Twitter Share Image"></a>
+            <a class="tweet-this analytics-link" data-category="Share" data-action="Twitter Share" data-label="Teacher Of The Year Button" alt="Twitter Share"><img src="img/share-twitter-blue.svg" alt="Twitter Share Image"></a>
        
             <span class="tumblr-share" data-title="Blow Minds. Teach Stem." data-description="The most mind-blowing profession now has the most mind-blowing awareness campaign." data-url="http://bit.ly/blowminds"></span>
-            <a class="tumblr-this" alt="Tumblr Share"><img src="img/share-tumblr-blue.svg" alt="Tumblr Share Image"></a>
+            <a class="tumblr-this analytics-link" data-category="Share" data-action="Tumblr Share" data-label="Teacher Of The Year Button" alt="Tumblr Share"><img src="img/share-tumblr-blue.svg" alt="Tumblr Share Image"></a>
 
           </div>
         </div>
@@ -243,13 +244,13 @@
               Mrs. Jenner would love this GIF. Share it with her!
               <span class="img-share">
 
-                <a onclick="return fbs_click('http://gph.to/1qHgs7R')" href="#" alt="Facebook Share"><img src="img/share-facebook-blue.svg" alt="Facebook Share Image"></a>
+                <a onclick="return fbs_click('http://gph.to/1qHgs7R')" href="#" alt="Facebook Share"  target="_blank" class="analytics-link" data-category="Share" data-action="Facebook Share" data-label="Big GIF Button"><img src="img/share-facebook-blue.svg" alt="Facebook Share Image"></a>
 
                 <span class="tweet" data-tweeturl="http://gph.to/1qHgs7R" data-tweet="Using STEM to support STEM." data-hashtags="BlowMinds,TeachSTEM,ShareGIFs"></span>
-                <a class="tweet-this" alt="Twitter Share"><img src="img/share-twitter-blue.svg" alt="Twitter Share Image"></a>
+                <a class="tweet-this analytics-link" data-category="Share" data-action="Twitter Share" data-label="Big GIF Button" alt="Twitter Share"><img src="img/share-twitter-blue.svg" alt="Twitter Share Image"></a>
 
                 <span class="tumblr-share" data-title="Blow Minds. Teach Stem." data-description="Using STEM to support STEM." data-url="http://gph.to/1qHgs7R"></span>
-                <a class="tumblr-this" alt="Tumblr Share"><img src="img/share-tumblr-blue.svg" alt="Tumblr Share Image"></a>
+                <a class="tumblr-this analytics-link" data-category="Share" data-action="Tumblr Share" data-label="Big GIF Button" alt="Tumblr Share"><img src="img/share-tumblr-blue.svg" alt="Tumblr Share Image"></a>
 
               </span>
             </figcaption>
@@ -267,19 +268,19 @@
             <span class="tweet" data-hashtags="TeachSTEM" data-tweeturl="http://bit.ly/blowminds">
               Science/tech/engineering/math: all mind-blowing. Teachers: mind-blowing. STEM teachers: mind-blowingest!
             </span>
-            <a class="tweet-this learn-section-share">Tweet This Right Now</a>
+            <a class="tweet-this learn-section-share analytics-link" data-category="Share" data-action="Twitter Share" data-label="Little Quote Text" >Tweet This Right Now</a>
           </p>
           <p class="learn-section-quote">
             <span class="tweet" data-tweeturl="http://bit.ly/blowminds">
               Put an end to our nation's bullying at the hands of that smarty-pants Finland. #TeachSTEM and improve our future!
             </span>
-            <a class="tweet-this learn-section-share">Tweet This Right Now</a>
+            <a class="tweet-this learn-section-share analytics-link" data-category="Share" data-action="Twitter Share" data-label="Little Quote Text">Tweet This Right Now</a>
           </p>
           <p class="learn-section-quote">
             <span class="tweet" data-tweeturl="http://bit.ly/blowminds" data-hashtags="BlowMinds,TeachSTEM">
               I hold the controversial opinion that teachers are important to the future of our society.
             </span>
-            <a class="tweet-this learn-section-share">Tweet This Right Now</a>
+            <a class="tweet-this learn-section-share analytics-link" data-category="Share" data-action="Twitter Share" data-label="Little Quote Text">Tweet This Right Now</a>
           </p>
         </div>
 
@@ -352,8 +353,8 @@
               <div class="footer-column-inner">            
                 <h3 class="column footer-section-header">Stem Teachers Made Social Media Possible</h3>
                 <div id="follow-links" class="column">
-                  <a class="follow-facebook footer social-link follow-link" href="https://www.facebook.com/groups/846756655337613/" target="_blank"></a>
-                  <a class="follow-twitter footer social-link follow-link" href="https://twitter.com/teach_stem" target="_blank"></a>
+                  <a class="follow-facebook footer social-link follow-link analytics-link" data-category="Off World" data-action="Facebook Group" data-label="Footer Button" href="https://www.facebook.com/groups/846756655337613/" target="_blank"></a>
+                  <a class="follow-twitter footer social-link follow-link analytics-link" data-category="Off World" data-action="Twitter Profile" data-label="Footer Button" href="https://twitter.com/teach_stem" target="_blank"></a>
                 </div>
               </div>
             </div>
