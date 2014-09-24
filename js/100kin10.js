@@ -277,6 +277,105 @@ $(document).ready(function () {
 	}
 
 	videoclick();
+	
+	
+	
+	
+	
+	// load the YouTube iframe API
+	var tag = document.createElement('script');
+	tag.src = "//www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	// initialize our arrays to hold video and player information
+	var playerArray = [],
+	    videoArray = [];
+
+	// safely pass the jQuery object as $
+	(function($) {
+	    // enables tracking of all YouTube videos on the page
+	    function trackYouTube() {
+	        // iterate through every iframe on the page
+	        $('iframe').each(function(i) {
+	            // grab the video source and other properties
+	            var baseUrlLength,
+	                $iframe = $(this),
+	                iframeSrc = $iframe.attr('src'),
+	                isYouTubeVideo = false,
+	                videoID,
+	                url;
+
+	            // if the video uses the http protocol
+	            if (iframeSrc.substr(0,25) == "http://www.youtube.com/v/") {
+	                baseUrlLength = 25;
+	                isYouTubeVideo = true;
+
+	            }
+	            // otherwise if the video uses the https protocol
+	            else if (iframeSrc.substr(0,26) == "https://www.youtube.com/v/") {
+	                baseUrlLength = 26;
+	                isYouTubeVideo = true;
+	            }
+
+	            // if we're dealing with a YouTube video, store its information in our arrays
+	            if (isYouTubeVideo) {
+	                // grab the videoID
+	                videoID = iframeSrc.substr(baseUrlLength);
+
+	                url = '//gdata.youtube.com/feeds/api/videos/' + videoID + '?v=2&alt=json';
+
+	                // if the ID ends with extra characters...
+	                if (videoID.indexOf('&') > -1) {
+	                    // ...remove the extra characters
+	                    videoID = videoID.substr(0, videoID.indexOf('&'));
+
+	                }
+
+	                // put an object in our array with the videoID...
+	                videoArray[i] = {};
+	                videoArray[i].id = videoID;
+
+	                // put the videoID on the iframe as its id
+	                $iframe.attr('id', videoID);
+
+	            }
+	        });
+	    }
+
+	    $(function() {
+	        // initiate tracking on document ready
+	        trackYouTube();
+	                onYouTubeIframeAPIReady();
+	    });
+
+	})(jQuery);
+
+	function onYouTubeIframeAPIReady() {
+	    // insert YouTube Player objects into our playerArray
+	    for (var i = 0; i < videoArray.length; i++) {
+	        playerArray[i] = new YT.Player(videoArray[i].id, {
+	            events: {
+	                'onStateChange': onPlayerStateChange
+	            }
+	        });
+	    }
+	}
+
+	// when the player changes states
+	function onPlayerStateChange(event) {
+
+	    // if the video begins playing, send the event
+	    if (event.data == YT.PlayerState.PLAYING) {
+	        alert();
+	    }
+	    // if the video ends, send the event
+	    if (event.data == YT.PlayerState.ENDED) {
+	        alert();
+	    }
+	}
+	
+	
 
 	// Find the select boxes and change them to fancy fake select boxes and radio buttons
 	// ----------------------------------------
