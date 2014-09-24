@@ -278,6 +278,9 @@ $(document).ready(function () {
 
 	videoclick();
 	
+	$('.fluid-width-video-wrapper').on('click', function() {
+		console.log('clicked');
+	});
 	
 	
 
