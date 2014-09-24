@@ -280,9 +280,18 @@ $(document).ready(function () {
 	
 	
 	
-	function onYouTubePlayerReady(playerid){
-		console.log(playerid);
-	};
+	var params = { allowScriptAccess: "always"  };
+	var atts = { id: "player_uid_731314409_1" };
+	
+	// listen
+	function onYouTubePlayerReady(playerId) {
+	  var ytplayer = getElementById("player_uid_731314409_1");
+	  ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
+	}
+	// closediv 
+	function onytplayerStateChange(newState) {
+	   console.log(newState);
+	}
 	
 	
 
