@@ -281,11 +281,11 @@ $(document).ready(function () {
 	
 	
 	var params = { allowScriptAccess: "always"  };
-	var atts = { id: "ytplayer" };
+	var atts = { id: "fitvid499493" };
 	
 	// listen
 	function onYouTubePlayerReady(playerId) {
-	  var ytplayer = getElementById("ytplayer");
+	  var ytplayer = getElementById("fitvid499493");
 	  ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
 	}
 	// closediv 
