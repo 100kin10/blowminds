@@ -141,7 +141,7 @@
       <div id="video-container-inner" class="row">
         <div id="new-embed-container" class="column large-10 large-centered">
 					<img id="video-header" src="img/100k_topcopy-15.png" alt="">
-        	<iframe width="996" height="560" src="//www.youtube.com/embed/WxVO_5RGM4A?rel=0&vq=hd1080&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+        	<iframe id="ytplayer" width="996" height="560" src="//www.youtube.com/embed/WxVO_5RGM4A?rel=0&vq=hd1080&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </section>
@@ -154,7 +154,7 @@
   		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
   		function onYouTubePlayerAPIReady(playerId) {
-				ytplayer = document.getElementsByTagName('iframe')[0];
+				ytplayer = document.getElementById("ytplayer");
 			  ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
 			}
 
