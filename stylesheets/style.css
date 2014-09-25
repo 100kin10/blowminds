@@ -5109,6 +5109,19 @@ img#video-header{
   text-align: center;
 }
 
+#video-share-buttons{
+	margin-top:30px;
+}
+
+#video-share-buttons a{
+	display:inline-block;
+	padding:0 10px;
+}
+
+#share-text{
+	padding-bottom:10px;
+}
+
 #video-wrap, #video-wrap-active {
   display: block;
   position: relative;
