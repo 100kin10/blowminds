@@ -67,7 +67,7 @@ function onHoverOrClickOut() {
 $('.analytics-link').click(function() {
 	var $linkCategory = $(this).data('category');
 	var $linkAction = $(this).data('action');
-	var $linkLabel = $(this).data('label');
+	var $linkLabel = $linkCategory + ' - ' + $linkAction + ' - ' +$(this).data('label');
 	ga('send', 'event', $linkCategory, $linkAction, $linkLabel);
 });
 
